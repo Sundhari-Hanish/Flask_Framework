@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask SQLAlchemy App</title>
+</head>
+<body>
+<h2>Flask SQLAlchemy Student App</h2>
+<a href="{{ url_for('new') }}">Add Student</a>
+<br><br>
+{% for message in get_flashed_messages() %}
+    <p style="color: green;">{{ message }}</p>
+{% endfor %}
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Address</th>
+        <th>Pin</th>
+    </tr>
+    {% for student in students %}
+    <tr>
+        <td>{{ student.name }}</td>
+        <td>{{ student.city }}</td>
+        <td>{{ student.addr }}</td>
+        <td>{{ student.pin }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
