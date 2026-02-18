@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student</title>
+</head>
+<body>
+<h2>Add New Student</h2>
+<form method="POST">
+    Name:<br>
+    <input type="text" name="name"><br><br>
+    City:<br>
+    <input type="text" name="city"><br><br>
+    Address:<br>
+    <textarea name="addr"></textarea><br><br>
+    Pin:<br>
+    <input type="text" name="pin"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<br>
+<a href="{{ url_for('show_all') }}">Back to Home</a>
+</body>
+</html>
