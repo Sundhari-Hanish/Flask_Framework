@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Product list</title>
+    </head>
+<body>
+    <h2> stored products</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+        </tr>
+        {% for product in products%}
+        <tr>
+            <td>{{product[0]}}</td>
+            <td>{{product[1]}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>
