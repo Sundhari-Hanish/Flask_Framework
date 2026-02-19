@@ -1,3 +1,4 @@
+# Flask application demonstrating SQLite database integration with basic insert and display operations.
 from flask import Flask, render_template, request
 import sqlite3
 app = Flask(__name__)
