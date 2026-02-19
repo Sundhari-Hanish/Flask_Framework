@@ -1,3 +1,4 @@
+# Flask application demonstrating URL redirection and handling GET and POST requests.
 from flask import Flask, redirect, url_for, request
 app = Flask(__name__)
 @app.route('/success/<name>')
