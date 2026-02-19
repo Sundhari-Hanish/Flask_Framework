@@ -1,3 +1,4 @@
+# Simple Flask application to collect student form data and display the result.
 from flask import Flask, render_template, request
 app = Flask(__name__)
 @app.route('/')
