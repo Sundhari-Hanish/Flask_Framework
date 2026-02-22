@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All complaints</title>
+</head>
+<body>
+    <h2>Stored Complaint</h2>
+    {% for complaint in complaints%}
+    <p>{{complaint}}</p>
+    {%endfor%}
+    <a href="{{url_for('welcome')}}">Home</a>
+</body>
+</html>
