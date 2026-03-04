@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <h2>Event Registration</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.full_name.label }}<br>
+            {{ form.full_name(size=30) }}
+        </p>
+        <p>
+            {{ form.email.label }}<br>
+            {{ form.email(size=30) }}
+        </p>
+        <p>
+            {{ form.tech_domain.label }}<br>
+            {{ form.tech_domain() }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</body>
+</html>
