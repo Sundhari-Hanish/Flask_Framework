@@ -29,13 +29,10 @@ def register():
             username=form.username.data,
             password=hashed_password
         )
-
         db.session.add(new_user)
         db.session.commit()
-
         flash("Registration successful! Please login.", "success")
         return redirect(url_for("login"))
-
     return render_template("register.html", form=form)
 
 @app.route("/login", methods=["GET", "POST"])
